@@ -1,0 +1,431 @@
+	body {
+	font-family: 'Roboto', sans-serif;
+ }
+
+
+/*Desktop*/
+
+@media only screen and (min-width: 1201px){
+	
+	header{
+		background-color: rgb(0, 0, 0);
+		margin: 0 auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	div.header li{
+		display: inline;
+	}
+
+	.header img {
+		max-width: 10%;
+		margin: 10px;
+	}
+	
+	nav {
+		padding: 15px;
+	}
+	
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 5px;
+		font-size: 1.1vw;
+	}
+	
+	a {
+		color: white;
+
+	}
+
+	.item:hover {
+		color: rgb(7, 187, 255);
+		border-bottom: solid;
+		border-bottom-width: 1px;
+		border-color: white;
+	}
+	
+	h2, h1{
+		color: rgb(217, 255, 0);
+		margin: 0 auto;
+		background-color: rgba(0, 0, 0, 0.712);
+		padding: 15px;
+		font-family: 'Russo One', sans-serif;
+		font-size: 3vw;
+		padding: 15px;
+		margin: 50px;
+	}
+	h3{
+		color: rgb(217, 255, 0);
+		margin: 0 auto;
+		background-color: rgba(0, 0, 0, 0.473);
+		padding: 15px;
+		font-family: 'Russo One', sans-serif;
+		font-size: 3vw;
+		padding: 15px;
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
+
+	div.homepage{
+		background-image: url("https://media.wired.com/photos/5b2011664383825d1d8a7210/master/pass/GettyImages-971150080.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	button.tickets{
+		background-color: black;
+		color: white;
+		padding: 15px;
+		border-style: none;
+		font-weight: bold;
+		margin: 25px;
+		font-size: 1.5vw;
+	}
+	button.tickets:hover{
+		background-color: rgb(255, 238, 0);
+		color: rgb(0, 0, 0);
+	}
+	div.cosplay{
+		background-image: url("https://www.spidersweb.pl/wp-content/uploads/2014/06/microsoft-e3.jpeg");
+		background-repeat: no-repeat;
+		background-position: center;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
+		align-items: center;
+		padding: 20px;
+	}
+	.responsive{
+		max-width: 15.65%;
+		height: auto;
+	}
+	.cosplay p{
+		padding-left: 10px;
+		text-align: left;
+		margin: 0 auto;
+		width: 70%;
+		background-color: rgba(0, 0, 0, 0.623);
+		color: rgb(0, 217, 255);
+		font-weight: bold;
+		padding: 25px;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		font-size: 1.2vw;
+		font-family: 'Do Hyeon', sans-serif;
+	}
+	div.lightcomputervideo{
+		background-image: url("https://tech4gamers.com/wp-content/uploads/2015/12/Microprocessor.jpg");
+		background-repeat: no-repeat;
+		background-position: cover;
+		display: flex;
+		justify-content: flex-end;
+		flex-direction: row-reverse;
+		align-items: center;
+		padding: 20px;
+	}
+	iframe.video{
+		padding: 20px;
+		width:30%;
+		height:auto;
+	}
+	p.lightcomputer{
+		padding-left: 10px;
+		text-align: right;
+		margin: 0 auto;
+		width: 70%;
+		background-color: rgba(0, 0, 0, 0.623);
+		color: rgb(0, 255, 34);
+		font-weight: bold;
+		padding: 25px;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		font-size: 1.2vw;
+		font-family: 'Do Hyeon', sans-serif;
+	}
+	div.placeholder{
+		background-image: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/vfPFP3W/fiber-optics-light-cable-line-concept-loop_nkxveqwg__F0000.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
+		align-items: center;
+		padding: 20px;
+	}
+	div.placeholder img{
+		max-width: 20%;
+		height: auto;
+	}
+	p.placeholder{
+		padding-left: 10px;
+		text-align: left;
+		margin: 0 auto;
+		width: 70%;
+		background-color: rgba(0, 0, 0, 0.623);
+		color: rgb(200, 255, 0);
+		font-weight: bold;
+		padding: 25px;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		font-size: 1.2vw;
+		font-family: 'Do Hyeon', sans-serif;}
+
+	div.events{
+		background-image: url("https://ginx.tv/wp-content/uploads/2018/05/E3-crowd.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		max-height: 270px;
+		min-height: 200px;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+	}
+	section.cities{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		flex-direction: row;
+		align-items: center;
+	}
+	button.events{
+		border-style: none;
+		padding: 15px;
+		background-color: black;
+		color: white;
+		font-weight: bold;
+		font-size: 1.5vw;
+		margin: 10px;
+		text-transform: uppercase;
+	}
+	button.events:hover{
+		background-color: rgb(255, 238, 0);
+		color: rgb(0, 0, 0);
+	}
+	
+	footer{
+		background-color:black;
+		text-align:center;
+		padding: 20px;
+		color:white;
+		font-size: 80%;
+	}
+}
+
+
+/*Mobile*/
+@media only screen and (min-width:301px) and (max-width: 1200px){
+/* Header */
+
+header{
+	background-color: black;
+	margin: 0 auto;
+	text-align: center;
+	
+}
+
+
+
+.header img {
+	max-width: 15%;
+	margin: 10px;
+}
+
+nav {
+	padding: 15px;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+    padding: 0;
+	font-size: 1.5vw;
+	line-height: 130%;
+}
+
+a {
+	color: white;
+}
+
+
+.item:hover {
+	color: rgb(7, 187, 255);
+	border-bottom: solid;
+	border-bottom-width: 1px;
+	border-color: white;
+}
+
+
+
+h2, h1{
+	color: rgb(217, 255, 0);
+	margin: 0 auto;
+	background-color: rgba(0, 0, 0, 0.712);
+	padding: 15px;
+	font-family: 'Russo One', sans-serif;
+	font-size: 4vw;
+	padding: 15px;
+	margin: 50px;
+}
+h3{
+	color: rgb(217, 255, 0);
+	margin: 0 auto;
+	background-color: rgba(0, 0, 0, 0.473);
+	padding: 15px;
+	font-family: 'Russo One', sans-serif;
+	font-size: 4vw;
+	padding: 15px;
+	margin-top: 25px;
+}
+
+div.homepage{
+	background-image: url("https://media.wired.com/photos/5b2011664383825d1d8a7210/master/pass/GettyImages-971150080.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+button.tickets{
+	background-color: black;
+	color: white;
+	padding: 15px;
+	border-style: none;
+	font-weight: bold;
+	margin: 25px;
+	font-size: 2vw;
+}
+button.tickets:hover{
+	background-color: rgb(255, 238, 0);
+	color: rgb(0, 0, 0);
+}
+div.cosplay{
+	background-image: url("https://www.spidersweb.pl/wp-content/uploads/2014/06/microsoft-e3.jpeg");
+	background-repeat: no-repeat;
+	background-position: center;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: center;
+	padding: 20px;
+}
+.responsive{
+	width: 15%;
+	height: auto;
+}
+div.cosplay p{
+	padding-left: 10px;
+	text-align: left;
+	margin: 0 auto;
+	width: 80%;
+	background-color: rgba(0, 0, 0, 0.623);
+	color: rgb(0, 217, 255);
+	font-weight: bold;
+	padding: 25px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 10px;
+	font-size: 1.4vw;
+	font-family: 'Do Hyeon', sans-serif;
+}
+div.lightcomputervideo{
+	background-image: url("https://tech4gamers.com/wp-content/uploads/2015/12/Microprocessor.jpg");
+	background-repeat: no-repeat;
+	background-position: cover;
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: row-reverse;
+	align-items: center;
+	padding: 20px;
+}
+iframe.video{
+	padding: 20px;
+	width:25%;
+	height:auto;
+}
+p.lightcomputer{
+	padding-left: 10px;
+	text-align: right;
+	margin: 0 auto;
+	width: 70%;
+	background-color: rgba(0, 0, 0, 0.623);
+	color: rgb(0, 255, 34);
+	font-weight: bold;
+	padding: 25px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 1.2vw;
+	font-family: 'Do Hyeon', sans-serif;
+}
+div.placeholder{
+	background-image: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/vfPFP3W/fiber-optics-light-cable-line-concept-loop_nkxveqwg__F0000.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: center;
+	padding: 20px;
+}
+div.placeholder img{
+	max-width: 20%;
+	height: auto;
+}
+p.placeholder{
+	padding-left: 10px;
+	text-align: left;
+	margin: 0 auto;
+	width: 70%;
+	background-color: rgba(0, 0, 0, 0.623);
+	color: rgb(200, 255, 0);
+	font-weight: bold;
+	padding: 25px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 1.2vw;
+	font-family: 'Do Hyeon', sans-serif;}
+div.events{
+	background-image: url("https://ginx.tv/wp-content/uploads/2018/05/E3-crowd.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+section.cities{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	flex-direction: row;
+	align-items: center;
+}
+button.events{
+	border-style: none;
+	padding: 15px;
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	font-size: 2vw;
+	margin: 10px;
+	text-transform: uppercase;
+}
+button.events:hover{
+	background-color: rgb(255, 238, 0);
+	color: rgb(0, 0, 0);
+}
+
+footer{
+	background-color:black;
+	text-align:center;
+	padding: 20px;
+	color:white;
+	font-size: 1.45vw;
+}
+}
