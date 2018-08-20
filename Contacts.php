@@ -30,7 +30,7 @@
 			}
 			
 			
-			}else {//čia dar reik sprendimo, kad klaidas gražiai rodytų
+			}else {//ČIA DAR REIK SPRENDIMO, kad suvesta info pasiliktų formoj ir kad klaidas gražiai rodytų
 			
 			if(strlen($name) == 0 || strlen($name) > 255 || strlen($email) == 0 || strlen($email) > 255 || strlen($content) == 0){
 						if(strlen($name) == 0){
@@ -54,12 +54,9 @@
 		}	
 	}		
 	
-	
 		
 	if(strlen($success) == 0) {
-		
-		
-		
+				
 		
 ?>
 
