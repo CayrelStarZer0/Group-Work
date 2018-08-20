@@ -30,13 +30,37 @@
 			}
 			
 			
-		}else {// ČIA DAR REIKIA SPRENDIMO, kaip tas klaidas padaryti tinkamai
+			}else {//čia dar reik sprendimo, kad klaidas gražiai rodytų
 			
-			print "There is an error."; 
+			if(strlen($name) == 0 || strlen($name) > 255 || strlen($email) == 0 || strlen($email) > 255 || strlen($content) == 0){
+						if(strlen($name) == 0){
+							$error['name'] = 'Error: invalid data in "Name"';
+						}
+						if(strlen($name) > 255){
+							$error['name'] = 'Error: invalid data in "Name"';
+						}
+						if(strlen($email) == 0){
+							$error['email'] = 'Error: invalid data in "Email"';
+						}
+						
+						if(strlen($email) > 255) {
+							$error['email'] = 'Error: too long data input in "Email"';
+						}
+
+						if(strlen($content) == 0) {
+							$error['content'] = 'Error: invalid data in "Content"';
+					}	
+			}	
 		}	
 	}		
+	
+	
 		
 	if(strlen($success) == 0) {
+		
+		
+		
+		
 ?>
 
 
@@ -193,21 +217,24 @@
 			<section class="front4">
 				<article class="intro4">
 					<h2>Let's have a chat:</h2>	
-					<form method="post" action="<?php echo $_SERVER['PHP_SELF'] ?>">
+				<form method="post" action="<?php echo $_SERVER['PHP_SELF'] ?>">
 						<div class="nameandemail"> 
-							<h4>Your name:</h4><input class="input1" type="text" name="name">
+							<h4>Your name:</h4><input class="input1" type="text" name="name"<?php echo $name; ?>"/>
+							<?php echo $error['name']; ?>
 						</div>
 						<div class="nameandemail"> 
-							<h4>Email adress:</h4> <input class="input1" type="text" name="email">
+							<h4>Email adress:</h4> <input class="input1" type="text" name="email"<?php echo $email; ?>"/>
+							<?php echo $error['email']; ?>
 						</div>
 						<div class="content">
-							<h4>Your enquiry:</h4> <textarea class="input2" name="content"></textarea>
+							<h4>Your enquiry:</h4> <textarea class="input2" name="content"><?php echo $content; ?></textarea>
+							<?php echo $error['content']; ?>
 						</div>
 						<div class="number">
 							<h4>What is 1 + 1 (write the number)?:</h4> <input type="text" name="number"/>
 							</div>
 						<div class="empty">
-							<h4></h4><input type="text" name="empty"/> <!-- HONEYPOT - KAI JĮ PADARYTI??? Tiesiog padariau tuščią lauką, bet tai tikrai ne tai, ko reikia-->
+							<h4></h4><input type="text" name="empty"/> <!-- honeypot - kaip jį padaryti??? Tiesiog padariau tuščią lauką, bet tai tikrai ne tai, ko reikia-->
 						</div>
 						<p><?php echo $success; ?></p>
 						<div class="send">
