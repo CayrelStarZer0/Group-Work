@@ -37,7 +37,7 @@
 							$error['name'] = 'Error: invalid data in "Name"';
 						}
 						if(strlen($name) > 255){
-							$error['name'] = 'Error: invalid data in "Name"';
+							$error['name'] = 'Error: too long data input in "Name"';
 						}
 						if(strlen($email) == 0){
 							$error['email'] = 'Error: invalid data in "Email"';
