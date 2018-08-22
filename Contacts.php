@@ -32,7 +32,7 @@
 			
 			}else {
 			
-			if(strlen($name) == 0 || strlen($name) > 255 || strlen($email) == 0 || strlen($email) > 255 || strlen($content) == 0){
+			if(strlen($name) == 0 || strlen($name) > 255 || strlen($email) == 0 || strlen($email) > 255 || strlen($content) == 0 || $empty !=null){
 						if(strlen($name) == 0){
 							$error['name'] = 'Error: invalid data in "Name"';
 						}
