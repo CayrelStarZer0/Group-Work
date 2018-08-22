@@ -3,14 +3,14 @@
 	$email = isset ($_POST['email']) ? $_POST['email']: '';
 	$content = isset ($_POST['content']) ? $_POST['content']: '';
 	$number = isset ($_POST['number']) ? $_POST['number']: '';
-	$empty = isset ($_POST['empty']) ? $_POST['empty']: '';
+	$empty = isset ($_POST['empty']) ? $_POST['empty']: null;
 	$success = isset ($_GET ['success']) ? $_GET['success']:'';
 	$error = array ("database" => "");
 	
 	
 	if($_POST){
 		
-		if(strlen($name)> 0 && strpos($email,'@') && strlen($content) > 0 && $number == 2 && $empty == 0) {
+		if(strlen($name)> 0 && strpos($email,'@') && strlen($content) > 0 && $number == 2 && $empty == null) {
 			
 				$conn = new mysqli('localhost', 'root', 'root', 'contact'); 
 			if ($conn->connect_error) {
@@ -30,7 +30,7 @@
 			}
 			
 			
-			}else {//ČIA DAR REIK SPRENDIMO, kad suvesta info pasiliktų formoj ir kad klaidas gražiai rodytų
+			}else {
 			
 			if(strlen($name) == 0 || strlen($name) > 255 || strlen($email) == 0 || strlen($email) > 255 || strlen($content) == 0){
 						if(strlen($name) == 0){
@@ -231,7 +231,7 @@
 							<h4>What is 1 + 1 (write the number)?:</h4> <input type="text" name="number"/>
 							</div>
 						<div class="empty">
-							<h4></h4><input type="text" name="empty"/> <!-- honeypot - kaip jį padaryti??? Tiesiog padariau tuščią lauką, bet tai tikrai ne tai, ko reikia-->
+							<h4></h4><input type="text" name="empty"/> 
 						</div>
 						<p><?php echo $success; ?></p>
 						<div class="send">
@@ -257,6 +257,6 @@
 
 <?php
 	}else {
-		header('Location: contacts.php'); // PADARIAU, KAD TIESIOG VEL ATSIDARYTU TAS PATS PSL, bet gal gali padaryti, kad kokia lentelė iššoktų, pvz., "thank you for your letter"
+		header('Location: contacts.php');
 	}
 ?>
