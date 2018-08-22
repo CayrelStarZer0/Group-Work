@@ -216,11 +216,11 @@
 					<h2>Let's have a chat:</h2>	
 				<form method="post" action="<?php echo $_SERVER['PHP_SELF'] ?>">
 						<div class="nameandemail"> 
-							<h4>Your name:</h4><input class="input1" type="text" name="name"<?php echo $name; ?>"/>
+							<h4>Your name:</h4><input class="input1" type="text" name="name" value="<?php echo $name; ?>"/>
 							<?php echo $error['name']; ?>
 						</div>
 						<div class="nameandemail"> 
-							<h4>Email adress:</h4> <input class="input1" type="text" name="email"<?php echo $email; ?>"/>
+							<h4>Email adress:</h4> <input class="input1" type="text" name="email" value="<?php echo $email; ?>"/>
 							<?php echo $error['email']; ?>
 						</div>
 						<div class="content">
