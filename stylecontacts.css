@@ -155,6 +155,10 @@ span {
 	width: 100%;
 }
 
+.empty {
+	display: none;
+}
+
 
 footer{
 	background-color:black;
