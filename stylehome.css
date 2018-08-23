@@ -108,9 +108,9 @@
 	}
 
 	div.intermediate{
-		background-image: url("https://newevolutiondesigns.com/images/freebies/polygon-wallpaper-12.jpg");
+		background-image: url("https://i.imgur.com/DYm1aqo.jpg");
 		background-repeat: no-repeat;
-		background-position: center;
+		background-position: top;
 		max-height: 450px;
 		min-height: 200px;
 		display: flex;
@@ -122,6 +122,7 @@
 	}
 	iframe.video{
 		margin: 0 auto;
+
 	}
 	div.events{
 		background-image: url("http://www.mariwasa.com/wp-content/uploads/mariwasa-polygon-background.jpg");
@@ -272,7 +273,7 @@ button.tickets:hover{
 }
 
 div.intermediate{
-	background-image: url("https://newevolutiondesigns.com/images/freebies/polygon-wallpaper-12.jpg");
+	background-image: url("https://i.imgur.com/DYm1aqo.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	display: flex;
